@@ -1,0 +1,50 @@
+/* 단위와 값 */
+
+/* 절대길이 - px, in, pt */
+.unit1 p{
+    font-size: 24px;
+}
+
+/* 상대길이 - em, rem */
+/* 1em === 부모의 font-size */
+/* 1rem === root의 font-size */
+.unit2 .parent {
+    color: blue;
+    font-size: 24px;
+}
+.unit2 .child {
+    color: red;
+    font-size: 1.5em;
+}
+
+/* 상대길이 - vw, vh */
+body {
+    margin: 0;
+}
+
+.unit3 .container {
+    background-color: coral;
+
+    width: 50vw;
+    height: 50vh;
+} 
+
+/* 상대길이 - vmin, vmax */
+.unit4 .container {
+    background-color: blue;
+
+    width: 100vmin;
+    height: 100vmin;
+} 
+
+/* 상대길이 - % */
+.unit5 .parent {
+    width: 50%;
+    height: 100px;
+    background-color: blue;
+}
+.unit5 .child {
+    width: 50%;
+    height: 30%;
+    background-color: indianred;
+}
