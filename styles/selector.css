@@ -1,0 +1,269 @@
+/* Type Selector */
+
+/* h2 {
+    color: purple;
+} */
+
+/* ID Selector */
+#welcom-title {
+    color: green;
+}
+
+/* Class Selector */
+.blue {
+    color: blue;
+}
+.red {
+    color: red;
+}
+
+/* Attribute Selector (속성 선택자) */
+
+/* 1. [attr] */
+a[target] {
+    color: hotpink;
+}
+
+/* 2. [attr=value] */
+a[href="https://example.org"] {
+    color: indigo;
+}
+
+input[type="submit"] {
+    background-color: green;
+}
+
+/* 3. [attr^=value] value로 시작하는 */
+a[href^="https://"] {
+    font-style: italic;
+}
+
+/* 4. [attr$=value] value로 끝나는 */
+/* a[href$=".com"] {
+    color: aqua;
+} */
+
+/* 5. [attr*=value] value가 적어도하나 */
+/* a[href*="example"] {
+    color: sienna;
+} */
+
+/* Pseudo-Class Selector (가상 클래스 선택자) */
+
+/* 1. first-child */
+/* li:first-child {
+    color: green;
+} */
+
+.movie:first-child {
+    font-size: 32px;
+}
+
+/* 2. last-child */
+span:last-child {
+    color: tomato;
+}
+
+/* 3. nth-child */
+/* li:nth-child(3) {
+    color: hotpink;
+} */
+
+/* 4. first-of-type type 중에 첫번째 */
+/* p:first-of-type{
+    color: red;
+} */
+
+/* 5. last-of-type type 중에 마지막 */
+/* p:last-of-type{
+    color: blue;
+} */
+
+/* 6. nth-of-type type n번쨰 */
+/* p:nth-of-type(2){
+    color: green;
+} */
+
+/* 7. not() */
+/* input:not([type=password]) {
+    background-color: indianred;
+}  */
+
+/* 동적 가상 클래스 선택자 */
+
+/* 8.link, visited */
+a:link {
+    color: tomato;
+}
+
+a:visited {
+    color: yellowgreen;
+}
+
+/* 9. hover, active, focus */
+input[type=button] {
+    background-color: skyblue;
+    border: none;
+}
+
+/* 마우스 올리고 있을때 */
+input[type=button]:hover{
+    background-color: teal;
+    color: white;
+}
+
+/* 마우스클릭하고 있을때 */
+input[type=button]:active{
+    background-color: red;
+}
+
+/* focus 됬을때 */
+/* input[type=text]:focus{
+    background-color: blue;
+    color: white;
+} */
+
+/* 10. enabled, disabled, checked */
+
+input[type=text]:enabled {
+    background-color: skyblue;
+}
+input[type=text]:disabled {
+    background-color: silver;
+}
+
+input[type=radio]:checked {
+    outline: 3px solid red;
+}
+input[type=checkbox]:checked {
+    outline: 3px solid blue;
+}
+
+/* Pseudo-Element Selector (가상 요소 선택자) */
+
+/* 11. Before, after */
+.movie-pe::before {
+    content: 'MOVIE';
+    color: indianred;
+} 
+.fav::after {
+    content: '⭐️';
+}  
+
+/* 12. first-letter, first-line, selection */
+
+/* .lorem::first-letter {
+    color: red;
+    font-size: 30px;
+} */
+.lorem::before {
+    content: 'BEFORE';
+}
+.lorem::first-line {
+    color: red;
+    font-size: 30px;
+}
+/* 드래그 할때  */
+.lorem::selection {
+    background-color: blue;
+    color: white;
+}
+
+/* Selector Combination (선택자 결합) */
+
+/* 13. 하위, 자식, 형제 선택자, 그룹화 */
+
+.selector_combinator #list > li:last-of-type {
+    color: red;
+}
+/* > 바로 하위(아래)자식에만 적용 */
+
+/* 일반 형제 선택자 결함 (~) 기준 selector 뒤쪽 전부 */
+.selector_combinator code ~ p {
+    color: red;
+}
+
+/* 인접 형제 선택자 결함 (+) 두가지가 붙어있어야*/
+.selector_combinator code + p {
+    background-color: blue;
+}
+
+/* 그룹화 */
+/* .selector_combinator p, span, code {
+    color: pu rple ;
+} */
+
+/* 14. 범용 선택자 (Universal Selector) */
+
+p + * {
+    color: red;
+}
+
+/* 15. 상속 제어하기 - initial, inherit, unset */
+
+/* initial */
+.initial div {
+    border: 1px solid silver;
+    margin: 2px;
+}
+
+.initial .parent {
+    color: blue;
+    font-size: 30px;
+}
+.initial .child2 {
+    color: initial;
+    font-size: initial;
+    /* all: initial; */
+}
+
+/* inherit */
+.inherit div {
+    border: 1px solid silver;
+    margin: 2px;
+}
+
+.inherit .child1 {
+    color: red;
+}
+
+.inherit .parent1, .parent2 {
+    color: blue;
+}
+
+.inherit .parent2 * {
+    color: inherit;
+}
+
+/* unset
+
+    1. 부모로부터 상속 받을 값이 있을 때 : inherit
+    2. 부모로부터 상속 받을 값이 djqt을 때 : initial
+
+*/
+
+/* 
+    우선순위
+
+    1. 선언된 곳
+    2. 명시도 (적용범위가 적을수록 명시도가 높은 것!)
+    3. 코드 위치
+*/
+
+.priority #box {
+    color: blue;
+}
+
+.priority .class-box {
+    color: red;
+}
+
+/* 
+    !important >
+    inline style >
+    ID >
+    Class/Attribute/Pseudo Class >
+    Type (tag) >
+    * >
+    inherited
+*/

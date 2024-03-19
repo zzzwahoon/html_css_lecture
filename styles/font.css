@@ -1,0 +1,95 @@
+/* 
+    폰트/텍스트 관련 속성
+
+    font-size,
+    font-style,
+    font-weight,
+    font-family,
+    line-height
+*/
+
+.font1 p{
+    font-size: 24px;
+    line-height: 2.0;
+}
+
+.font1 .text{
+    /* font-size: 24px; */
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* font (shorthand) */
+
+.font2 .default2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.7;
+    font-family: 'Times New Roman', Times, serif;
+}
+.font2 .text2 {
+    color: red;
+    font: italic bold 20px/1.7 'Times New Roman', Times, serif;
+}
+
+/* letter-spacing, word-spacing */
+
+.font3 .text3  {
+    letter-spacing: -1px;
+    word-spacing: 10px;
+}
+
+/* text-align */
+/* only works on block elements not in inline elements */
+
+.font4 .text4{
+    background-color: rosybrown;
+    text-align: center;
+}
+.font4 .span4{
+    background-color: rosybrown;
+    text-align: center;
+}
+
+/* text-indent */
+
+.font5 .paragraph1 {
+    text-indent: 20px;
+}
+.font5 .container {
+    text-indent: 50%;
+}
+.font5 .inline{
+    text-indent: 30px;
+}
+
+/* text-decoration */
+
+.font6 .span {
+    font-size: 40px;
+    color: blue;
+    text-decoration:  black line-through underline wavy  4px ;
+}
+
+/* word-break */
+
+.font7 p {
+    width: 120px;
+    background-color: cadetblue;
+}
+
+.font7 p[lang="en"] {
+    word-break: break-all;
+}
+
+.font7 p[lang="ko"] {
+    word-break: keep-all;
+}
+
+/* text-transform */
+.font8 .container p:last-of-type {
+    color: blue;
+    text-transform: capitalize;
+}

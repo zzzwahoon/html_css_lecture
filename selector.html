@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/selector.css">
+</head>
+<body>
+    <h1 id="welcom-title">Welcome!</h1>
+    
+    <h2>Movie List</h2>
+    <ul>
+        <li class="blue red">Toy Story</li>
+        <li class="red">Zootopia</li>
+        <li class="blue">Inisdeout</li>
+    </ul>
+
+    <h2>Coffee List</h2>
+    <ol>
+        <li>Americano</li>
+        <li>Latte</li>
+    </ol>
+
+    <h3>Lorem Ipsum</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    <p class="blue">Porro velit quod aut beatae, corrupti error, sunt voluptate corporis, nemo ratione id nihil dolorem quos consectetur amet possimus nesciunt commodi quaerat.</p>
+    <p>Eligendi, temporibus!</p>
+
+    <hr>
+
+    <ul>
+        <li>
+            <a href="http://example.com" target="_blink">
+                Example Link (com/http)
+            </a>
+        </li>
+        <li>
+            <a href="http://example.org" target="_blink">
+                Example Link (org/http)
+            </a>
+        </li>
+        <li>
+            <a href="https://example.com">
+                Example Link (com/http)
+            </a>
+        </li>
+        <li>
+            <a href="https://example.org">
+                Example Link (org/http)
+            </a>
+        </li>
+    </ul>
+
+    <input type="text">
+    <input type="submit">
+    <input type="reset">
+
+    <hr>
+
+    <h2>Movie List</h2>
+    <ul>
+        <li class="movie">Toy Story</li>
+        <li class="movie">Zootopia</li>
+        <li class="movie">Inisdeout</li>
+        <li class="movie">Coco</li>
+        <li class="movie">Finding Nemo</li>
+    </ul>
+
+    <h2>Coffee List</h2>
+    <ol>
+        <li>Americano</li>
+        <li>Latte</li>
+        <li>Hot Choco</li>
+    </ol>
+
+    <h2>Lorem Ipsum</h2>
+    <p>
+        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </span>
+        <span>Porro velit quod aut beatae, corrupti error, sunt voluptate corporis, nemo ratione id nihil dolorem quos consectetur amet possimus nesciunt commodi quaerat.</span>
+        <span>Eligendi, temporibus!</span>
+    </p>
+
+    <hr>
+
+    <h2>Movie List</h2>
+    <section>
+        <div>Toy Story</div>
+        <p>Zootopia</p>
+        <p>Inside out</p>
+        <p>Finding Nemo</p>
+        <div>Coco</div>
+    </section>
+
+    <hr>
+
+    <form>
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        <input class="pw" type="password" placeholder="password">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <a href="http://example.com">Example Link</a>
+    <a href="http://example.com ">Example Link</a>
+
+    <hr>
+
+    <input type="button" value="저를 클릭하세요!">
+    <input type="button" value="저를 클릭하세요!">
+    <input type="button" value="저를 클릭하세요!">
+    <input type="button" value="저를 클릭하세요!">
+    <input type="button" value="저를 클릭하세요!">
+    <input type="text">
+
+    <hr>
+
+    <div>
+        <input type="text" placeholder="1">
+        <input type="text" placeholder="2">
+        <input type="text" placeholder="3" disabled>
+    </div>
+
+    <div>
+        <input type="radio" name="my-input" id="yes">
+        <label for="yes">Yes</label>
+
+        <input type="radio" name="my-input" id="no">
+        <label for="no">No</label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="chekc-me" id="check-me">
+        <label for="check-me">Check me!</label>
+    </div>
+
+    <hr>
+
+    <h2>Pseudo-Element Selector</h2>
+    <div class="movie-pe">Toy Story</div>
+    <div class="movie-pe fav">Zootopia</div>
+    <div class="movie-pe">Insideout</div>
+    <div class="movie-pe fav">Coco</div>
+    <div class="movie-pe">Finding Nemo</div>
+
+    <hr>
+    <p class="lorem">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptate modi, aliquam, natus fugit alias laudantium, laborum nulla quam explicabo hic facilis. Ullam sapiente voluptatibus delectus aut harum exercitationem porro?
+    </p>
+    <p class="lorem">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptate modi, aliquam, natus fugit alias laudantium, laborum nulla quam explicabo hic facilis. Ullam sapiente voluptatibus delectus aut harum exercitationem porro?
+    </p>
+    <p class="lorem">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptate modi, aliquam, natus fugit alias laudantium, laborum nulla quam explicabo hic facilis. Ullam sapiente voluptatibus delectus aut harum exercitationem porro?
+    </p>
+
+    <hr>
+    <h2>Selector Cominators (선택자 결합)</h2>
+    <div class="selector_combinator">
+        <ul id="list">
+            <li>
+                List1
+                <ol>
+                    <li>List1</li>
+                    <li>List2</li>
+                </ol>
+            </li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+        </ul>
+    
+        <ol>
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+        </ol>
+
+        <div>
+            <p>P</p>
+            <span>Span</span>
+            <code>Code</code>
+            <p>P2</p>
+            <div>Div</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Universal Selector (범용 선택자)</h2>
+    <div class="universal_selector">
+        <p>P</p>
+        <span>Span</span>
+        <code>Code</code>
+        <p>P2</p>
+        <div>Div</div>
+    </div>
+
+    <hr>
+
+    <h2>Initial</h2>
+    <div class="initial">
+        <div class="parent">
+            parent
+            <div class="child1">child1</div>
+            <div class="child2">child2</div>
+        </div>
+    </div>
+
+    <h2>Inherit</h2>
+    <div class="inherit">
+        <div class="parent1">
+            parent
+            <div class="child1">child1</div>
+            <div class="child2">child2</div>
+        </div>
+        <div class="parent2">
+            parent
+            <div class="child1">child1</div>
+            <div class="child2">child2</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Priority check</h2>
+
+    <div class="priority">
+        <div id="box" class="class-box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

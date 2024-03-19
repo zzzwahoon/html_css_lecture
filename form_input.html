@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Fieldset</h2>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Title 1</legend>
+        <div>
+          <label for="foodname">Food name:</label>
+          <input type="text" name="food" id="foodname" />
+        </div>
+
+        <div>
+          <label for="color">color:</label>
+          <input type="text" name="color" id="color" />
+        </div>
+      </fieldset>
+
+      <fieldset disabled>
+        <legend>Title 2</legend>
+        <div>
+          <label for="foodname">Food name:</label>
+          <input type="text" name="food" id="foodname" />
+        </div>
+
+        <div>
+          <label for="color">color:</label>
+          <input type="text" name="color" id="color" />
+        </div>
+      </fieldset>
+      <button type="submit">제출</button>
+    </form>
+
+    <hr />
+
+    <form action="" method="GET">
+      <div>
+        <label
+          >ID :
+          <input type="text" name="text" minlength="5" maxlength="10" />
+        </label>
+      </div>
+      <div>
+        <label
+          >PASSWORD:
+          <input type="password" name="pwd" />
+        </label>
+      </div>
+      <div>
+        <label
+          >EMAIL:
+          <input type="email" name="email" />
+        </label>
+      </div>
+      <div>
+        <label
+          >TEL:
+          <input type="tel" name="tel" />
+        </label>
+      </div>
+      <div>
+        <label
+          >NUMBER:
+          <input type="number" name="number" />
+        </label>
+      </div>
+      <div>
+        <label
+          >RAGNE:
+          <input type="range" name="range" />
+        </label>
+      </div>
+      <div>
+        <label
+          >DATE:
+          <input type="date" name="date" />
+        </label>
+      </div>
+      <div>
+        <label
+          >MONTH:
+          <input type="month" name="month" />
+        </label>
+      </div>
+      <div>
+        <label
+          >TIME:
+          <input type="time" name="time" />
+        </label>
+      </div>
+      <div>
+        <label
+          >CECKBOX:
+          <input type="checkbox" name="check1" />
+          <input type="checkbox" name="check2" checked />
+          <input type="checkbox" name="check3" />
+        </label>
+      </div>
+      <div>
+        <label
+          >RADIO:
+          <input type="radio" name="radio" value="r1" />
+          <input type="radio" name="radio" value="r2" />
+          <input type="radio" name="radio" value="r3" />
+        </label>
+      </div>
+
+      <!-- <button type="submit">submit</button> -->
+      <input type="reset" />
+      <input type="submit" value="제출하기!" />
+      <input type="button" value="빈 버튼" />
+    </form>
+
+    <hr />
+
+    <form action="" method="GET">
+      <div>
+        <label for="username">Name :</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="John"
+          autocomplete="on"
+          required
+        />
+      </div>
+      <div>
+        <label for="job">Job :</label>
+        <input
+          type="text"
+          name="job"
+          id="job"
+          placeholder="ex) professor"
+          disabled
+        />
+      </div>
+      <div>
+        <label for="age">Age :</label>
+        <input
+          type="text"
+          name="age"
+          id="age"
+          placeholder="23"
+          value="20"
+          readonly
+        />
+      </div>
+      <div>
+        <label for="score">Score :</label>
+        <input
+          type="number"
+          name="score"
+          id="score"
+          min="-10"
+          max="10"
+          step="2"
+        />
+      </div>
+      <div>
+        <label for="score">Score :</label>
+        <input
+          type="range"
+          name="range"
+          id="score"
+          min="-10"
+          max="10"
+          step="2"
+        />
+      </div>
+
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+
+    <hr/>
+
+    <form action="" method="GET">
+      <div>
+        <input type="reset" />
+        <input type="submit" value="제출하기!"/>
+        <input type="button" value="빈 버튼"/>
+      </div>
+      <div>
+        <button type="reset">
+          <strong>초기화!</strong>
+        </button>
+        <button type="submit">제출!</button>
+        <button type="button">일반 버튼</button>
+      </div>
+    </form>
+
+    <hr/>
+
+    <form action="" method="GET">
+      <label for="movie">좋아하는 영화:</label>
+      <select name="movie" id="movie" required>
+        <option value="" >--PLEASE choose an option--</option>
+        <optgroup label="animation">
+          <option value="toystory">토이스토리</option>
+          <option value="zootopia" selected>주토피아</option>
+          <option value="insideout">인사이드아웃</option>
+        </optgroup>
+        <optgroup label="sf"> 
+          <option value="matrix">매트릭스</option>
+        </optgroup>
+      </select>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="" method="GET">
+      <label for="movie">좋아하는 영화:</label>
+      <input type="text" id="movie" name="movie" list="movie-list">
+
+      <datalist id="movie-list">
+        <option>주토피아</option>
+        <option>인사이드아웃</option>
+        <option>토이스토리1</option>
+        <option>토이스토리2</option>
+        <option>토이스토리3</option>
+      </datalist>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="" method="GET">
+      <label for="comment">댓글 :</label>
+      <textarea name="comment" id="comment" rows="5">
+      </textarea>
+    </form>
+  </body>
+</html>
