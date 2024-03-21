@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/box.css">
+</head>
+<body>
+    <h2>박스 모델 (Box Model)</h2>
+    <div class="box1">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore, aliquid aliquam fuga tenetur nostrum vel quidem dolore eaque neque repellat maiores laboriosam quisquam recusandae est labore quibusdam voluptatem. Architecto!
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>크기 - width, height</h2>
+    <div class="box2">
+        <div class="block">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate voluptatem, molestiae recusandae totam saepe labore nobis deleniti. Odit atque deleniti blanditiis quidem modi ipsum eos sint pariatur possimus corporis?
+        </div>
+        <span class="inline">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil illo rerum earum. Enim numquam fugiat commodi dolorem suscipit rerum. Et, ipsam! Culpa omnis corrupti inventore pariatur unde reprehenderit enim iusto?
+        </span>
+    </div>
+
+    <hr>
+
+    <h2>크기 - max-width, min-width, max-height, min- height</h2>
+    <div class="box3">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>여백 - margin</h2>
+    <div class="box4">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>마진 상쇄 (margin collapsing)</h2>
+    <h3>1. 인접형제</h3>
+    <div class="box5">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <hr>
+
+    <h3>2. 부모-자식요소간</h3>
+    <div class="box6">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>여백 - padding</h2>
+    <div class="box7">
+        <div class="parent">
+            <div class="child">
+                <div class="grand-child"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>테두리 - border-style, border-width, border-color</h2>
+    <div class="box8">
+        <div class="box"></div>
+    </div>
+
+    <hr>
+
+    <h2>테두리 - border shorthand</h2>
+    <div class="box9">
+        <div class="box"></div>
+    </div>
+
+    <hr>
+
+    <h2>border-radis</h2>
+    <div class="box10">
+        <div class="box"></div>
+    </div>
+
+    <hr>
+
+    <h2>box-sizing</h2>
+    <div class="box11">
+        <div class="box">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+            <h3>안녕하세요~!</h3>
+        </div>
+        <div class="box2">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+            <h3>안녕하세요~!</h3>
+        </div>
+    </div>
+</body>
+</html>
