@@ -1,0 +1,169 @@
+/* 레이아웃 */
+
+/* display - inline, block, inline-block */
+
+/* 
+
+inline 요소 : ex) span..
+    - 영역의 크기가 내부 콘텐츠 크기로 정해진다.
+    - margin, padding 의 top/bottom을 지정할 수 없다.
+    - 여러 요소가 가로배치가 된다.
+
+block 요소 : ex) div..
+    - 영역의 크기를 (width, height) 지정할 수 있다.
+    - width를 지정하지 않으면 가로 전체를 차지한다.
+    - 여러요소가 새로 배치가 된다.
+
+inline-block 요소 : ex) input..
+    - 영역의 크기를 (width, height) 지정할 수 있다.
+    - 여러 요소가 가로 배치가 된다.
+
+*/
+
+/* 요소를 없애는 방법 - display: none, visibility: hidden */
+
+.layout2 div {
+    height: 200px;
+    border: solid;
+}
+
+.layout2 .box1 {
+    background-color: darkorange;
+}
+.layout2 .box2 {
+    background-color: greenyellow;
+    /* display: none; */
+    visibility: hidden;
+}
+.layout2 .box3 {
+    background-color: dodgerblue;
+}
+
+/* float */
+.layout3 .container {
+    border: solid;
+    width: 500px;
+}
+.layout3 .image {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    border: 5px solid blue;
+    float: left;
+    margin: 10px;
+}
+
+/* position - relative */
+.layout4 div{
+    width: 200px;
+    height: 200px;
+    border: 5px solid orangered;
+    margin-left: 150px;
+}
+.layout4 .box {
+    background-color: peachpuff;
+
+    position: relative;
+    top: -50px;
+    left: -70px;
+}
+
+/* position - absolute */
+.layout5 div {
+    width: 200px;
+    height: 200px;
+    border: 5px solid orangered;
+    margin-left: 150px;
+}
+
+.layout5 .box {
+    width: 150px;
+    height: 100px;
+    border-color: darkblue;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+
+    position: absolute;
+
+    top: 80px;
+}
+
+.layout5 {
+    position: relative;
+}
+
+/* 
+    position: absolute인 요소는, 
+    조상중에 position이 static이 아닌 요소를 찾아 기준점을 삼는다.
+*/
+
+/* position - fixed */
+.layout6 div {
+    width: 200px;
+    height: 200px;
+    border: 5px solid orangered;
+    margin-left: 150px;
+}
+.layout6 .box {
+    width: 150px;
+    height: 100px;
+    border-color: darkblue;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+
+    position: fixed;
+
+    bottom: 40px;
+    right: 40px;
+}
+
+/* position - sticky */
+.layout7 div {
+    width: 200px;
+    height: 200px;
+    border: 5px solid orangered;
+}
+.layout7 .parent {
+    position: sticky;
+    top: 100px;
+    left: 100px;
+}
+.layout7 .box{
+    width: 150px;
+    height: 100px;
+    border-color: darkblue;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+}
+
+/* overflow */
+.layout8 div {
+    background-color: bisque;
+
+    width: 200px;
+    height: 230px;
+    
+    /* overflow: hidden ; */
+    /* overflow: scroll ; */
+    overflow: auto;
+}
+
+/* z-index */
+.layout9 div{
+    width: 150px;
+    height: 150px;
+    background-color: blanchedalmond;
+    border: 3px solid orangered;
+}
+.layout9 .box2{
+    margin-top: -30px;
+    margin-left: 40px;
+
+    position: relative;
+    /* z-index: 999; */
+}
+.layout9 .box3{
+    margin-top: -30px;
+    position: relative;
+    z-index: -1;
+}
