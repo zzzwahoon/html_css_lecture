@@ -1,0 +1,97 @@
+/* 
+    Transition (전환)
+*/
+
+/* transition-property, transition-duration */
+
+.transition1 .box {
+    width: 300px;
+    height: 80px;
+    border: 2px dashed teal;
+    background-color: darkslategray;
+    font-size: 50px;
+    color: white;
+
+    transition-property: all;
+    /* transition-property: background-color; */
+    transition-duration: .8s;
+}
+
+.transition1 .box:hover {
+    width: 340px;
+    background-color: indianred;
+    color: black;
+    font-size: 60px;
+}
+
+/* transition-delay */
+.transition2 .box {
+    width: 300px;
+    height: 80px;
+    background-color: blue;
+    font-size: 50px;
+    color: white;
+
+    transition-property: all;
+    transition-duration: .8s;
+    transition-delay: .8s;
+}
+
+.transition2 .box:hover {
+    background-color: red;
+}
+
+/* transition-timing-function */
+.transition3 .box {
+    width: 300px;
+    height: 80px;
+    background-color: blue;
+    font-size: 50px;
+    color: white;
+
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.transition3 .box:hover {
+    background-color: red;
+    height: 400px;
+}
+
+/* transition shorthand */
+/*  */
+.transition4 .box {
+    width: 300px;
+    height: 80px;
+    background-color: blue;
+    font-size: 50px;
+    color: white;
+
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: linear; */
+
+    transition: all 3s linear 1s;
+}
+
+.transition4 .box:hover {
+    background-color: red;
+    height: 400px;
+}
+
+/* transition + transform */
+.transition5 .box {
+    width: 100px;
+    height: 100px;
+    border: 10px solid seagreen;
+    background-color: rgb(204,253,225);
+    border-radius: 30px;
+
+    transition: all 3s ease-in-out;
+}
+
+.transition5 .box:hover {
+    transform: rotate(360deg) translate(30px, 30px);
+}
