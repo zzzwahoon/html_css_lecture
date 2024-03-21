@@ -1,0 +1,109 @@
+/* color - rgb, rgba */
+.background1 div {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+/* opacity */
+.background2 {
+    position: relative;
+}
+.background2 .floating-box{
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    /* background-color: cadetblue;
+    opacity: 0.8; */
+
+    background-color: rgba(100, 100, 100, 0.5);
+    /* opacity: 0.5; */
+}
+
+/* background-color, background-image */
+.background3 {
+    position: relative;
+    margin-bottom: 250px;
+}
+.background3 .floating-box{
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    background-image: url(../images/kaws_simpsons.jpeg);
+    background-size: 100px;
+    ;
+}
+
+/* background repeat */
+.background4 .box {
+    height: 500px;
+
+    background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg);
+
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+
+    border: solid red;
+}
+
+/* background-postion */
+.background5 .box {
+    width: 300px;
+    height: 300px;
+
+    background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg);
+
+    background-repeat: no-repeat;
+    /* background-position: 150px 50px; */
+    background-position: top center;
+
+    border: solid red;
+}
+
+/* background-orgin */
+.background6 .box {
+    /* width: 300px; */
+    height: 200px;
+    border: 30px dashed blue;
+    padding: 30px;
+
+    background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg);
+
+    background-repeat: no-repeat;
+
+    /* background-origin: content-box; */
+    /* background-origin: padding-box; */
+    background-origin: border-box;
+}
+
+/* background-size */
+.background7 .box {
+    height: 400px;
+
+    border: 5px solid blue;
+
+    background-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/hand.jpg);
+    background-repeat: no-repeat;
+
+    /* background-size: contain; */
+    background-size: cover;
+
+    /* contain/cover : 이미지의 비율을 유지하며 요소의  크기에 맞춰진다. */
+
+    /* background-repeat: repeat;
+    background-size: 100px 100px; */
+}
+
+/* background shorthand */
+.background8 {
+    
+}
