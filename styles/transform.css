@@ -1,0 +1,41 @@
+/* 
+    Transform (변형)
+*/
+
+.transform1 #kaws_simpsons {
+    width: 200px;
+    transform: scale(.8);
+}
+
+/* transform - rotate */
+.transform2 #kaws_simpsons{
+    width: 200px;
+    transform: rotate(45deg);
+}
+
+/* transform - translate */
+.transform3 #kaws_simpsons{
+    width: 200px;
+    /* transform: translate(100px, 100px); */
+    transform: translateX(50px);
+}
+
+/* transform - skew */
+.transform4 #kaws_simpsons {
+    width: 200px;
+    margin: 100px;
+
+    /* transform: skewX(20deg); */
+    /* transform: skewY(30deg); */
+    transform: skew(30deg, 20deg);
+}
+
+/* transform - origin */
+.transform5 #kaws_simpsons {
+    width: 200px;
+    margin: 100px;
+
+    transform: scale(1.3);
+    /* transform-origin: bottom right; */
+    transform-origin: 50px 100px;
+}
