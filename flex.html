@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/flex.css">
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <h2>Outline</h2>
+    <div class="flex1">
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>container - flex-direction</h2>
+    <div class="flex2">
+        <div class="container2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>container - flex-wrap, flex-flow(shorthand)</h2>
+    <div class="flex3">
+        <div class="container3">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+
+    <hr>
+
+    <h2>item - order</h2>
+    <div class="flex4">
+        <div class="container4">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+
+    <hr>
+
+    <h2>item - flex-grow</h2>
+    <div class="flex5">
+        <div class="container5">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+    </div>
+
+    <hr>
+
+    <h2>item - flex-shrink</h2>
+    <div class="flex6">
+        <div class="container6">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+    </div>
+
+    <hr>
+
+    <h2>item - flex-basis</h2>
+    <div class="flex7">
+        <div class="container7">
+            <div class="item">flex-basis</div>
+            <div class="item">!</div>
+            <div class="item">!</div>
+    </div>
+
+    <hr>
+
+    <h2>item - flex shorthand</h2>
+    <div class="flex8">
+        <div class="container8">
+            <div class="item">flex-shorthand</div>
+            <div class="item">!</div>
+            <div class="item">!</div>
+    </div>
+
+    <hr>
+
+    <h2>container - justify-content</h2>
+    <div class="flex9">
+        <h3>justify-content: flex-start;</h3>
+        <div class="container9" id="jc1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <h3>justify-content: flex-end;</h3>
+        <div class="container9" id="jc2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <h3>justify-content: center;</h3>
+        <div class="container9" id="jc3">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <h3>justify-content: space-between;</h3>
+        <div class="container9" id="jc4">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <h3>justify-content: space-around;</h3>
+
+        <div class="container9" id="jc5">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>align-items</h2>
+    <div class="flex10">
+        <h3>align-items: flex-start;</h3>
+        <div class="container10" id="ai1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <h3>align-items: flex-end;</h3>
+        <div class="container10" id="ai2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <h3>align-items: center;</h3>
+        <div class="container10" id="ai3">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>align-content</h2>
+    <div class="flex11">
+        <h3>align-content: flex-start;</h3>
+        <div class="container11" id="ac1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+        <h3>align-content: flex-end;</h3>
+        <div class="container11" id="ac2">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+        <h3>align-content: center;</h3>
+        <div class="container11" id="ac3">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+        <h3>align-content: space-between;</h3>
+        <div class="container11" id="ac4">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+        <h3>align-content: space-around;</h3>
+        <div class="container11" id="ac5">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>align-self</h2>
+    <div class="flex12">
+        <div class="container12">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+</body>
+</html>

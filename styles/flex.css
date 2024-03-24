@@ -1,0 +1,300 @@
+/* Flexbox */
+
+/* outline */
+.flex1 .container {
+    border: 5px dashed orange;
+    display: flex;
+
+}
+
+.flex1 .item {
+    width: 50px;
+    height: 50px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+
+}
+
+/* flex container, flex item, main axis, cross axis */
+
+/* container */
+/* flex-driection */
+.flex2 .container2 {
+    border: 5px dashed orange;
+    display: flex;
+    /* flex-direction: row-reverse ; */
+    flex-direction: column-reverse;
+}
+
+.flex2 .item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+
+}
+
+
+/* flex-wrap, flex-flow(shorthand) */
+.flex3 .container3 {
+    height: 250px;
+    border: 5px dashed orange;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: column wrap;
+}
+
+.flex3 .container3 .item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+
+}
+
+/* item-order */
+.flex4 .container4 {
+    height: 250px;
+    border: 5px dashed orange;
+    display: flex;
+}
+.flex4 .container4 .item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+
+.flex4 .container4 .item:nth-child(3) {
+    order: -1;
+}
+.flex4 .container4 .item:nth-child(5) {
+    order: 1;
+}
+.flex4 .container4 .item:nth-child(4) {
+    order: 2;
+}
+
+/* item - flex-grow */
+.flex5 .container5 {
+    height: 250px;
+    border: 5px dashed orange;
+    display: flex;
+}
+.flex5 .container5 .item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+
+    /* flex-grow: 1; */
+}
+.flex5 .container5 .item:nth-child(2) {
+    flex-grow: 2;
+}
+.flex5 .container5 .item:nth-child(3) {
+    flex-grow: 1;
+}
+
+/* item - flex-shrink */
+.flex6 .container6 {
+    height: 250px;
+    border: 5px dashed orange;
+    display: flex;
+}
+.flex6 .container6 .item {
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+.flex6 .container6 .item:nth-child(1) {
+    flex-shrink: 0;
+}
+.flex6 .container6 .item:nth-child(3) {
+    flex-shrink: 2;
+}
+
+/* item - flex-basis */
+.flex7 .container7 {
+    height: 250px;
+    border: 5px dashed orange;
+    display: flex;
+}
+.flex7 .container7 .item {
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+
+    /* flex-grow: 1; */
+    flex-basis: 0;
+}
+.flex7 .container7 .item:nth-child(1) {
+    flex-grow: 5;
+}
+.flex7 .container7 .item:nth-child(2) {
+    flex-grow: 1;
+}
+.flex7 .container7 .item:nth-child(3) {
+    flex-grow: 3;
+}
+
+/* item - flex shorthand */
+.flex8 .container8 {
+    height: 250px;
+    border: 5px dashed orange;
+    display: flex;
+}
+.flex8 .container8 .item {
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+
+    /* flex: flex-grow (basis = 0) */
+    /* flex: 1; */
+
+    /* flex: flex-grow, flex-shrink, flex-basis */
+    flex: 1  3 50px;
+}
+
+/* container - justify-content */
+.flex9 .container9 {
+    height: 100px;
+    border: 5px dashed orange;
+    display: flex;
+    margin-bottom: 10px;
+
+    /* flex-direction: column-reverse; */
+    /* 주축기준  start: 주축시작위치로, end: 주축 끝나는 위치로*/
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+    /* center : 가운데정렬 */
+    /* justify-content: center; */
+
+    /* space-between : start, end 뺴고 간격 동일 하게 정렬*/
+    /* justify-content: space-between; */
+
+    /* space-around : start, end 포함 양쪽 간격 동일 */
+    /* justify-content: space-around; */
+}
+.flex9 .container9 .item {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+
+#jc1 {
+    justify-content: flex-start;
+}
+#jc2 {
+    justify-content: flex-end;
+}
+#jc3 {
+    justify-content: center;
+}
+#jc4 {
+    justify-content: space-between;
+}
+#jc5 {
+    justify-content: space-around;
+}
+
+/* align-items */
+.flex10 .container10 {
+    height: 200px;
+    border: 5px dashed orange;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.flex10 .container10 .item {
+    width: 50px;
+    /* height: 50px; */
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+
+#ai1 {
+    align-items: flex-start;
+}
+#ai2 {
+    align-items: flex-end;
+}
+#ai3 {
+    align-items: center;
+}
+
+/* align-content */
+.flex11 .container11 {
+    height: 400px;
+    border: 5px dashed orange;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex11 .container11 .item {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+
+#ac1 {
+    align-content: flex-start;
+}
+#ac2 {
+    align-content: flex-end;
+}
+#ac3 {
+    align-content: center;
+}
+#ac4 {
+    align-content: space-between;
+}
+#ac5 {
+    align-content: space-around;
+}
+
+/* align-self */
+.flex12 .container12 {
+    height: 400px;
+    border: 5px dashed orange;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+.flex12 .container12 .item {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    background-color: paleturquoise;
+    border: 3px solid blue;
+    font-size: 30px;
+}
+.flex12 .container12 .item:nth-child(4) {
+    align-self: flex-start;
+}
