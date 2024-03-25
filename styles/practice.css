@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(227, 248, 251);
+}
+
+.container {
+    background-color: rgb(166, 172, 227);
+    max-width: 760px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+nav {
+    background-color: tomato;
+    color: white;
+    /* width: 120px; */
+    flex-basis: 120px;
+}
+
+.box-container{
+    background-color: aquamarine;
+    /* width: 100%; */
+    flex-grow: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: wheat;
+    border: 3px solid rgb(44,24,44);
+    border-radius: 5px;
+    min-height: 150px;
+    /* width: 200px; */
+    /* width: 50%; */
+    flex-basis: 50%;
+    flex-grow: 1;
+
+}
+
+.box:nth-child(2n) {
+    border: 3px solid rgb(39,39,129);
+}
+
+footer {
+    background-color: rgb(202, 249, 205);
+    border: 3px solid green;
+    min-height: 50px;
+
+    flex-grow: 1;
+    /* width: 100%; */
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        /* display: contents; */
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .box-container {
+        flex-direction: column;
+    }
+
+    /* .box {
+        flex-basis: 100%;
+    } */
+}
